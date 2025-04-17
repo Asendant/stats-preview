@@ -4,25 +4,25 @@ import DesktopImage from "./images/image-header-desktop.jpg";
 function App() {
   return (
     <>
-      <div className='bg-very-dark-blue min-w-screen h-screen relative flex justify-center'>
-        <div className="bg-dark-desaturated-blue flex flex-col-reverse justify-end m-auto w-[87.2%] min-h-[81.589%] rounded-lg overflow-hidden">
+      <div className='bg-very-dark-blue min-h-screen w-screen relative flex flex-col items-center justify-center md:flex-row'>
+        <div className="flex flex-col-reverse w-4/5 bg-dark-desaturated-blue rounded-lg mt-10 mb-10 md:flex-row">
           {/* Insights */}
-          <div className="px-[1.97rem] py-6 flex flex-col">
+          <div className="p-10 md:w-1/2 md:p-16 md:flex md:flex-col md:justify-center">
             {/* Text */}
-            <div className="mb-4">
-              <h1 className="text-[1.3rem] xs:text-[1.5rem] sm:text-[2rem] font-bold text-center mb-2">Get <em className="not-italic text-soft-violet">insights</em> that help your business grow.</h1>
-              <p className="text-slightly-transparent-white text-[0.8rem] xs:text-[0.875rem] sm:text-[0.94rem] font-light text-center">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+            <div className="mb-10 md:mb-24">
+              <h1 className="font-bold text-white text-2xl text-center mb-6 md:text-5xl md:text-start md:mb-10">Get <em className="not-italic text-soft-violet">insights</em> that help your business grow.</h1>
+              <p className="text-very-transparent-white text-center md:text-xl md:text-start">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
             </div>
             {/* Numbers */}
-            <div className="mt-10">
+            <div className="lg:flex lg:flex-row">
               <Statistic number="10k+" category="COMPANIES" />
               <Statistic number="314" category="TEMPLATES" />
               <Statistic number="12M+" category="QUERIES" />
             </div>
           </div>
           {/* Picture */}
-          <div className="relative aspect-[1.2/1] sm:aspect-[1.5/1]">
-              <img src={DesktopImage} alt="Woman on computer typing as another woman laughs looking at something out of the frame." className="relative object-cover w-full h-full rounded-tl-lg rounded-tr-lg"/>
+          <div className="relative md:w-1/2">
+              <img src={DesktopImage} alt="Woman on computer typing as another woman laughs looking at something out of the frame." className="rounded-tl-lg rounded-tr-lg object-cover md:rounded-none md:w-full md:h-full"/>
               <div className="absolute inset-0 bg-soft-violet pointer-events-none mix-blend-multiply" />
           </div>
         </div>
